@@ -4452,7 +4452,7 @@ Recommendation                     : Negotiation failure</pre>
       'Apply the right playbook to common alert scenarios'
     ],
     body: `
-      <p>Once you reach L3, you join the on-call rotation. On-call means you carry the pager outside normal hours and you\'re the first responder when production wakes up. The work itself is mostly the same diagnostics you already know — what changes is the time pressure, the communication discipline, and the need to make good calls with incomplete information at 3 AM.</p>
+      <p>Joining the on-call rotation isn\'t tied to a single level — <b>it depends on your site, team, and country</b>. Some sites bring DCTs in as soon as they\'re confident on the floor; others wait until you\'re deeper into diagnostic work. Your DCM and your country\'s on-call policy doc are the authority on when (and whether) you join. What\'s universal: on-call means you carry the pager outside normal hours and you\'re the first responder when production wakes up. The work itself is mostly the same diagnostics you already know — what changes is the time pressure, the communication discipline, and the need to make good calls with incomplete information at 3 AM.</p>
 
       <h3>What on-call means at CoreWeave</h3>
       <ul>
@@ -6873,13 +6873,13 @@ const LEVEL_META = {
   3: {
     label: 'Advanced Diagnostics',
     timeline: '~1 → 2+ years',
-    audience: 'Experienced DCTs taking on diagnostic complexity, on-call rotation, and cross-team coordination.',
-    hero: 'Level 3 is where the work shifts from "follow the runbook" to "figure out what\'s actually wrong." You\'re reaching for BMC consoles, reading SEL logs, walking through structured link troubleshooting, and carrying the pager. You start leading complex incidents and mentoring L1s and L2s through them. You\'re also the person who notices that the same issue keeps coming back and writes the SDA ticket that drives a real fix.',
+    audience: 'Experienced DCTs taking on diagnostic complexity and cross-team coordination.',
+    hero: 'Level 3 is where the work shifts from "follow the runbook" to "figure out what\'s actually wrong." You\'re reaching for BMC consoles, reading SEL logs, and walking through structured link troubleshooting. You start leading complex incidents and mentoring L1s and L2s through them. You\'re also the person who notices that the same issue keeps coming back and writes the SDA ticket that drives a real fix.',
     competencyTitle: 'L3 expectation (from the official Leveling Guide)',
     competencyText: 'Conduct root cause analysis on recurring failures. Lead the response to complex or systemic issues. Suggest improvements to SOPs. Hold others accountable. Coordinate across multiple teams and vendors during deployments and incidents.',
     competencyExample: 'Example: Multiple racks experience intermittent network failures impacting customer workloads. Success = lead the response that minimizes downtime, ensures appropriate documentation for future prevention, and upholds operational and cultural standards.',
     ready: [
-      'You\'ve carried the on-call pager through multiple shifts and incidents',
+      'You can read SEL logs and BMC consoles to localize a hardware fault without paging up',
       'You can localize a network link issue using BMC, scope, EXFO, and loopback',
       'You\'ve led at least one PDU swap or breaker incident without senior oversight',
       'You\'ve identified a recurring pattern and driven it to a process improvement',
